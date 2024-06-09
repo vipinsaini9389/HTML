@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body bgcolor="aqua">
+    <form action="">
+        <p><h1 align="center">Registration Form</h1></p>
+        <br>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" required name="fname" placeholder="Enter First Name"></td>
+            </tr>
+            <tr>
+                <td>Last Name :</td>
+                <td><input type="text"name="lname" placeholder="Enter Last Name"><td>
+            </tr>
+            <tr>
+                <td>Moblie Number :</td>
+                <td><select>
+                    <option value="+91">+91</option>
+                    <option value="+1">+1</option>
+                    <option value="+92">+92</option>
+                    <option value="+93">+93</option>
+                </select> <input type="number" name="Moblie" minlength="10" maxlength="10" placeholder="Enter Moblie Number" required></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" required name="Email" placeholder="ex: abc@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td>Male<input type="radio" name="Gender" value="Male" required> Female<input type="radio" name="Gender" value="Female" required></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td> 
+                <td><input type="date" name="date of birth" value="DOB" required></td>
+            </tr>
+            <tr>
+                <td>Course :</td>
+                <td>HTML<input type="checkbox" name="Course" value="HTML"> CCC<input type="checkbox" name="Course" value="CCC"> JavaScript<input type="checkbox" name="Course" value="JavaScript"> CSS<input type="checkbox" name="Course" value="CSS"></td>
+            </tr>
+            <tr>
+                <td>Institute :</td>
+                <td><input type="text" name="Institute" value="Learning Point" readonly></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea cols=25 rows=2> </textarea></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="text" name="Pass1" required placeholder="Enter Your Password"></td>
+            </tr>
+            <tr>
+                <td>Re-Enter Password :</td>
+                <td><input type="text" name="Pass2" required placeholder="Re-Enter Your Password"></td>
+            </tr>
+        </table>
+        <input type="Submit">
+        <input type="Reset">
+    </form>
+</body>
+</html>
+
