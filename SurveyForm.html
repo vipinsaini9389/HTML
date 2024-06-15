@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <center>
+        <h1>Survey Form</h1>
+        <p>Let us know how we can improve freeCodeCamp</p>
+    </center>
+    <form action="">
+        <table align="center">
+            <tr>
+                <td align="right"><br><label for="Name">*Name:</label></td>
+                <td><br><input type="text" name="Name" id="Name" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td align="right"><br><label for="Email">*Email:</label></td>
+                <td><br><input type="email" name="Email" id="Email" placeholder="Enter your Email" pattern="[A-Za-z0-9.]+@[A-Za-z]+\.[A-Za-z]{0,50}" required></td>
+            </tr>
+            <tr>
+                <td align="right"><br><label for="Age">*Age:</label></td>
+                
+                <td><br><input type="number" name="Age" id="Age" placeholder="Age" required> <br> </td>
+            </tr>
+            <tr>
+                <td align="right" ><label for="Role">Which option best describes your current role?</label><br> <br></td>
+                
+                <td>
+                    <select name="Role" id="Role">
+                        <option value="Student">Student</option>
+                        <option value="Full-Time Job">Full-Time Job</option>
+                        <option value="Full-Time Learner">Full-Time Learner</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">How likely is it that you would recommend<br>freeCodeCamp to a friend?<br> <br></td>
+                <td>
+                    <br> <br>
+                    <label><input type="radio" name="Recommend" value="Definitely">Definitely</label><br>
+                    <br>
+                    <label><input type="radio" name="Recommend" value="Maybe">Maybe</label><br>
+                    <br>
+                    <label><input type="radio" name="Recommend" value="Not Sure">Not sure</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="FCC">What do you like most about FCC:</label><br> <br></td>
+                <td>
+                    <select name="FCC" id="FCC">
+                        <option value="Challenges">Select an option</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Community">Community</option>
+                        <option value="Open Source">Open Source</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="Improved">Things that should be improved in the future <br>(Check all that apply)</label><br> <br></td>
+                <td>
+                    <br> <br> 
+                    <label><input type="checkbox" name="Improved" value="Front-end Projects">Front-end Projects</label><br>
+                    <br>
+                    <label><input type="checkbox" name="Improved" value="Back-end Projects">Back-end Projects</label><br>
+                    <br>
+                    <label><input type="checkbox" name="Improved" value="Data Visualization">Data Visualization</label><br>
+                </td>
+            </tr>
+        </table>
+        <center>
+            <button type="submit">Submit</button>
+        </center>
+    </form>
+</body>
+</html>

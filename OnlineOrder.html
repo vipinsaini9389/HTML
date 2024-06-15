@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pete's Pizza Delivery</title>
+</head>
+<body>
+    <center>
+        <h1>Pete's Pizza Delivery</h1>
+        <h2>Online Order Form</h2>
+        <p>* Required fields</p>
+    </center>
+    <form action="">
+        <table align="center">
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>Customer details</legend>
+                        <table>
+                            <tr>
+                                <td><label for="name">Name:</label></td>
+                                <td><input type="text" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="address">Address:</label></td>
+                                <td><input type="text" id="address" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="town">Town/City:</label></td>
+                                <td><input type="text" id="town" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="postcode">Postcode:</label></td>
+                                <td><input type="text" id="postcode" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tel">Tel:</label></td>
+                                <td><input type="text" id="tel" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email:</label></td>
+                                <td><input type="email" id="email" required></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Topping*</legend>
+                        <input type="radio" name="Topping" value="Margherita" required> Margherita <br>
+                        <input type="radio" name="Topping" value="Four Seasons" required> Four Seasons <br>
+                        <input type="radio" name="Topping" value="Meat Feast" required> Meat Feast <br><br>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Size*</legend>
+                        <input type="radio" name="Size" value="Small" required> Small <br>
+                        <input type="radio" name="Size" value="Medium" required> Medium <br>
+                        <input type="radio" name="Size" value="Large" required> Large <br><br>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Extras</legend>
+                        <input type="checkbox" name="Extras" value="Mushrooms"> Mushrooms <br>
+                        <input type="checkbox" name="Extras" value="Green Peppers"> Green Peppers <br>
+                        <input type="checkbox" name="Extras" value="Anchovies"> Anchovies <br>
+                        <input type="checkbox" name="Extras" value="Extra Cheese"> Extra Cheese
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>Delivery</legend>
+                        Preferred delivery time <input type="time" required> <br><br>
+                        <p>Delivery instructions</p>
+                        <textarea rows="3" cols="100"></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <center>
+            <button type="submit">Submit order</button>
+        </center>
+    </form>
+</body>
+</html>
