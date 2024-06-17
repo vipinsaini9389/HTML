@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page Generator</title>
+</head>
+<body>
+        <h4>Test Page Generator</h4>
+        <p>Test Page Generator will create any number of pages in a bucketed structure.</p>
+    <center>
+        <form action="">
+            <table width="80%">
+                <tr>
+                    <td align="right"><label for="contentRoot">Content Root</label><br><br></td>
+                    <td><input type="text" id="contentRoot" size="120" placeholder="Root path [Default: /content/ <current-timestamp>]"><br><br></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="template">Template</label><br><br></td>
+                    <td><input type="text" id="template" size="120" placeholder="Template path [Optional]"><br><br></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="totalPages">Total Pages</label><br><br></td>
+                    <td><input type="text" id="totalPages" size="120" placeholder="Total number of pages to generate"><br><br></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="bucketSize">Bucket Size</label><br><br></td>
+                    <td><input type="text" id="bucketSize" size="120" placeholder="Number of pages to generate per folder. Must be greater than 1. [Default 100]"><br><br></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="saveThreshold">Save Threshold</label><br><br></td>
+                    <td><input type="text" id="saveThreshold" size="120" placeholder="Save batch size [Default: 1000]"><br><br></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Property</td>
+                    <td>
+                        <table border="1" width="100%">
+                            <tr>
+                                <td>Multi</td>
+                                <td>Name</td>
+                                <td>Value</td>
+                                <td></td>
+                            </tr>
+                            <tr> 
+                                <td><input type="checkbox"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td align="right" colspan="4"><button type="button">+ Add Property</button></td>
+                            </tr>
+                        </table>
+                        <p>
+                            <i> Properties marked as "Multi" will split the Value on commas (,) turning the resulting segments into a String Array.</i>
+                        </p>
+                        <p>
+                           <i> JavaScript evaluated server-side can be used to generate values for Property values. Place JavaScript between {{}} to be evaluated.</i>
+                        </p>
+                        <p>
+                           <i> JavaScript expressions should evaluate to String or Number and not Object. <br> Example: {{new Date().getTime()}} </i>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <center>
+                <button type="submit">Generate Test Pages</button>
+            </center>
+        </form>
+    </center>
+</body>
+</html>
